@@ -7,7 +7,7 @@ pergunta = ''
 while True:
     cont += 1
     idade = int(input('Qual a idade :  '))
-    sexo = str(input('Sexo [F/M]:  ')).strip().upper()[0]
+    sexo = ' '
     while sexo not in 'FfMm':
         sexo = str(input('Sexo [F/M]:  ')).strip().upper()[0]
     if idade < 18:
@@ -24,7 +24,7 @@ while True:
         maior_idade_h += 1
     if sexo in 'Mn' and idade < 18:
         menor_idade_h += 1
-    pergunta = str(input('quere continuar[S/N]:  ')).strip().upper()[0]
+    pergunta = ' '
     while pergunta not in 'SsNn':
         pergunta = str(input('quere continuar[S/N]:  ')).strip().upper()[0]
     if pergunta in 'Nn':
