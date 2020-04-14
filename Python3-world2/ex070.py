@@ -9,16 +9,17 @@ while True:
     preço: float = float(input('Preço R$: '))
     total += preço
     novo_preço = preço + preço_menor
+    # cont == 1 ao invés de novo_preço
     if preço > 10:
         preço_mais_m += 1
     
-    if preço == novo_preço:
+    if preço == novo_preço or preço < preço_menor:
         menor_nome_p = nome
         preço_menor = preço
-    else:
-        if preço < preço_menor:
-            menor_nome_p = nome
-            preço_menor = preço
+#     else:
+#         if preço < preço_menor:
+#             menor_nome_p = nome
+#             preço_menor = preço
         
     pergunta: str = str(input('\033[1;33mDeseja continuar[S/N]:\033[m ')).strip().upper()[0]
     if pergunta in 'Nn':
