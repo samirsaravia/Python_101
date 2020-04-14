@@ -3,6 +3,8 @@ title = 'par ou ímpar'.upper()
 print('~~' * 10)
 print(f'\033[7;30m{title:^20}\033[m')
 print('~~' * 10)
+# poi = par ou impar
+# vop = vitoria ou perda
 poi = vop = ''
 cont = 0
 while True:
@@ -11,7 +13,7 @@ while True:
     escolha_parinpar = str(input('Par ou Impar[P/I]: ')).strip().upper()[0]
     en = escolha_numero
     epi = escolha_parinpar
-    # numero do pc
+    # npc = numero do pc
     npc = random.randint(1, 100)
     soma = npc + en
     if soma % 2 == 0:
