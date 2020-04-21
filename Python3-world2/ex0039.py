@@ -1,5 +1,7 @@
-data = int(input('Digite o ano de nascimento: ').strip())
-idade = 2020 - data
+from datetime import datetime
+data_atual = datetime.now().date().year
+data_nascimento = int(input('Digite o ano de nascimento: ').strip())
+idade = data_atual - data_nascimento
 if idade < 16:
     print('Ainda vai se alistar ao seriço militar.')
     print('Faltam {} ano/s'.format(17 - idade))
