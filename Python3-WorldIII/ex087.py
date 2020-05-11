@@ -2,6 +2,7 @@ matriz: list = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 list_pares = list()
 col_tres = list()
 col_dois = list()
+linha_dois: list = list()
 for linha in range(0, 3):
     for coluna in range(0, 3):
         matriz[linha][coluna] = int(input(f'Digite um valor para [{linha}:{coluna}]: '))
@@ -11,6 +12,8 @@ for linha in range(0, 3):
             col_tres.append(matriz[linha][coluna])
         if coluna == 1:
             col_dois.append(matriz[linha][coluna])
+        if linha == 1:
+            linha_dois.append(matriz[linha][coluna])
 for linha in range(0, 3):
     for coluna in range(0, 3):
         print(f'[{matriz[linha][coluna]:^5}] ', end='')
@@ -20,3 +23,4 @@ print(f'A soma da terceira coluna é: {sum(col_tres)}')
 print(f'O maior valor da coluna 2 é: {max(col_dois)}')
 print(col_dois)
 print(col_tres)
+print(f'O maior número da linha 2 é: {max(linha_dois)}')
