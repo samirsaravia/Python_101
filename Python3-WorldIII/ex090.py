@@ -6,6 +6,5 @@ if aluno['media'] >= 7:
 else:
     aluno['situação'] = f'\033[1;31m{"reprovado".upper()}\033[m'
 print('---' * 10)
-print(f'Nome é igual a {aluno["nome"]}')
-print(f'Média é igual a {aluno["media"]}')
-print(f'Situação é igual a {aluno["situação"]}')
+for k, v in aluno.items():
+    print(f' -{k} é igual a {v}')
