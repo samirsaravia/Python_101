@@ -32,7 +32,7 @@ for letter in sherlock:
 
 print(letter_count)
 
-# using variables (x,y) to unpack to prepare to show in matplotlib
+# using variables (x,y).unpack to prepare for displaying at matplotlib
 x, y = zip(*letter_count.items())
 plt.bar(x, y)
 plt.show()
