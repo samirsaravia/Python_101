@@ -47,5 +47,3 @@ archie = Infant('Archie', 0)
 archie.add_vac('MMA')
 help(archie)
 print(archie.get_details())
-
-inher
