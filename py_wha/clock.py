@@ -1,5 +1,5 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
-from honey_love import send_love
+from py_wha.honey_love import send_love
 
 
 sched = BlockingScheduler()
